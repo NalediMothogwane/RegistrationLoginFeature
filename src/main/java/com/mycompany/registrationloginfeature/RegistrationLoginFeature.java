@@ -21,9 +21,9 @@ public class RegistrationLoginFeature {//Start of RegistrationLoginFeature
         System.out.print("Enter first name: ");
         String firstName = sc.nextLine();
 
-        System.out.print("Enter last name: "); 
+        System.out.print("Enter last name: ");
         
-        String lastName = sc.nextLine();
+        String lastName = sc.nextLine(); 
 
         System.out.print("Enter password: ");
         String regPassword = sc.nextLine();
