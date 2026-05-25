@@ -12,11 +12,11 @@ import java.util.Scanner;
 public class RegistrationLoginFeature {//Start of RegistrationLoginFeature
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in);
 
         // Collect registration details
         System.out.print("Enter username: ");
-        String regUsername = sc.nextLine();
+        String regUsername = sc.nextLine(); 
 
         System.out.print("Enter first name: ");
         String firstName = sc.nextLine();
