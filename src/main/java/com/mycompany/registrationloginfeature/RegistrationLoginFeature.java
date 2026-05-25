@@ -78,7 +78,7 @@ public class RegistrationLoginFeature {//Start of RegistrationLoginFeature
             System.out.println(user.returnLoginStatus(loginstatus));
         
         }
-        boolean loggedIn=true;
+        boolean loggedIn=true; 
     
    
     
