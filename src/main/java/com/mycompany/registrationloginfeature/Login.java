@@ -53,18 +53,23 @@ public class Login {//start of login class
     }
 
     // Method: register user
-    public String registerUser() {
-        if (!checkUserName()) {
-            return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
-        }
-        if (!checkPasswordComplexity()) {
-            return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
-        }
-        if (!checkCellPhoneNumber()) {
-            return "Cell number is not correctly formatted; please check the number and try again.";
-        }
-        return "User registered successfully.";
+    
+      
+     public String registerUser(){
+    
+    if(!checkUserName()){
+        return "Username is not correctly formatted , please ensure that your username contains an underscore and is no more than five characters in length.";
     }
+ 
+    if (!checkPasswordComplexity()){
+        return "Password is not correctly formatted , please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
+    }
+    
+    if (!checkCellPhoneNumber()){
+        return "Cell phone number incorrectly formatted or does not contain international code.";
+    }
+    return "User registered successfully.";
+}
 
     // Method: login user
     public boolean loginUser(String enteredUsername, String enteredPassword) {
@@ -78,7 +83,7 @@ public class Login {//start of login class
     }
 
     // Method: return login status
-    public String returnLoginStatus() {
+    public String returnLoginStatus(boolean loginstatus) {
         if (isLoggedIn) {
             return "Welcome " + firstName + ", " + lastName + " it is great to see you again.";
         } else {
