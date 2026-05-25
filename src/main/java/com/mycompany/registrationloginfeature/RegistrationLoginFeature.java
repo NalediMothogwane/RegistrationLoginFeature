@@ -15,7 +15,7 @@ public class RegistrationLoginFeature {//Start of RegistrationLoginFeature
         Scanner sc = new Scanner(System.in);
 
         // Collect registration details
-        System.out.print("Enter username: ");
+        System.out.print("Enter username: "); 
         String regUsername = sc.nextLine();
 
         System.out.print("Enter first name: ");
